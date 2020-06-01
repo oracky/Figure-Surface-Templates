@@ -2,6 +2,7 @@
 #define _USE_MATH_DEFINES
 #include "Figura.h"
 #include <math.h>
+#include <cstdarg>
 
 template<typename T, int N>
 class RegularPolygon : public Figure<T, N>

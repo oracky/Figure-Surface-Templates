@@ -4,18 +4,20 @@
 #include <iostream>
 #include <math.h>
 
+constexpr auto SQUARE_POINTS = 4;
+
 template<typename T>
-class Square : public Figure<T, 4>
+class Square : public Figure<T, SQUARE_POINTS>
 {
 public:
 	Square();
-	Square(T x1, T y1, T x2, T y2);
+	Square(T x1, T y1, T x2, T y2);		// only two points are necessary to calculate area
 	Square(T x1, T y1, T x2, T y2, T x3, T y3, T x4, T y4);
 	virtual double area() override;
 };
 
 template<typename T> 
-class Square<Point<T>> : public Figure<T, 4>
+class Square<Point<T>> : public Figure<T, SQUARE_POINTS>
 {
 public:
 	Square();

@@ -2,8 +2,10 @@
 #include "Figura.h"
 #include <math.h>
 
+constexpr auto TRIANGLE_POINTS = 3;
+
 template<typename T>
-class Triangle : public Figure<T, 3>
+class Triangle : public Figure<T, TRIANGLE_POINTS>
 {
 public:
 	Triangle();
@@ -12,7 +14,7 @@ public:
 };
 
 template<typename T>
-class Triangle<Point<T>> : public Figure<T, 3>
+class Triangle<Point<T>> : public Figure<T, TRIANGLE_POINTS>
 {
 public:
 	Triangle();
