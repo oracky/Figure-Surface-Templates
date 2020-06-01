@@ -8,8 +8,6 @@ int main()
 	// tests for area method
 	#ifdef TESTS
 	RUNALLTESTS();
-	#endif // TESTS
-
 	
 	// tests for instantination
 	Point<int>(1, 2);	// OK
@@ -21,6 +19,7 @@ int main()
 	delete f_sq;
 	delete f_tr;
 	delete f_rp;
+	#endif // TESTS
 
 	return 0;
 }
