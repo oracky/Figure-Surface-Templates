@@ -89,6 +89,15 @@ void test_polymorphism_RegularPolygon_area()
 	delete f2;
 }
 
+void empty_object_test()
+{
+	Square<int> s;
+	Triangle<int> t;
+	RegularPolygon<int, 5> r;
+	assert(s.area() == t.area() && s.area() == r.area() && s.area() == 0);
+	std::cout << "Tests for empty objects: passed\n";
+}
+
 
 
 
@@ -103,5 +112,6 @@ void RUNALLTESTS()
 	test_static_RegularPolygon_area();
 	test_static_Point_RegularPolygon_area();
 	test_polymorphism_RegularPolygon_area();
+	empty_object_test();
 }
 

@@ -15,5 +15,6 @@ void test_polymorphism_Triangle_area();
 void test_static_RegularPolygon_area();
 void test_static_Point_RegularPolygon_area();
 void test_polymorphism_RegularPolygon_area();
+void empty_object_test();
 
 void RUNALLTESTS();
