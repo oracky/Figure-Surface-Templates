@@ -20,12 +20,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\tests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Figura.h" />
     <ClInclude Include="src\Point.h" />
     <ClInclude Include="src\RegularPolygon.h" />
     <ClInclude Include="src\Square.h" />
+    <ClInclude Include="src\tests.h" />
     <ClInclude Include="src\Triangle.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
